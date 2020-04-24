@@ -1,0 +1,9 @@
+#define VBATPIN A7
+#define PIN_CS 8
+#define PIN_RST 4
+#define PIN_IRQ 3
+#define INTERVAL 10000
+#define DHTTYPE DHT22
+#define DHTPIN 13
+#define FREQ 915E6
+#define NODE_ID "feather_1"

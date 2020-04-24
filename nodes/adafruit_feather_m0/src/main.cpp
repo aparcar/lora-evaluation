@@ -5,18 +5,10 @@
 #include <DHT.h>
 #include <DHT_U.h>
 #include <Wire.h>
-
-#define VBATPIN A7
-#define PIN_CS 8
-#define PIN_RST 4
-#define PIN_IRQ 3
-#define INTERVAL 10000
-#define DHTTYPE DHT22 // DHT 22 (AM2302)
-#define DHTPIN 13
+#include "config.h"
+#include "voltage.h"
 
 unsigned txNumber;
-
-const long frequency = 915E6; // LoRa Frequency
 
 DHT_Unified dht(DHTPIN, DHTTYPE);
 
@@ -66,20 +58,11 @@ void setup()
   LoRa.onTxDone(onTxDone);
 }
 
-float get_voltage()
-{
-  float measuredvbat = analogRead(VBATPIN);
-  measuredvbat *= 2;    // we divided by 2, so multiply back
-  measuredvbat *= 3.3;  // Multiply by 3.3V, our reference voltage
-  measuredvbat /= 1024; // convert to voltage
-  return measuredvbat;
-}
-
 void loop()
 {
   if (runEvery(INTERVAL + random(500)))
   {
-    if (!LoRa.begin(frequency))
+    if (!LoRa.begin(FREQ))
     {
       Serial.println("LoRa begin fail");
       return;
@@ -99,7 +82,7 @@ void loop()
       doc["hum"] = event.relative_humidity;
     }
 
-    doc["node"] = "feather_1";
+    doc["node"] = NODE_ID;
     doc["bat"] = get_voltage();
     doc["cnt"] = txNumber++;
     String output;

@@ -5,7 +5,8 @@
 #include <DHT.h>
 #include <DHT_U.h>
 #include <Wire.h>
-#include <config.h>
+#include "config.h"
+#include "voltage.h"
 
 unsigned txNumber;
 
@@ -57,15 +58,6 @@ void setup()
   LoRa.onTxDone(onTxDone);
 }
 
-float get_voltage()
-{
-  float measuredvbat = analogRead(VBATPIN);
-  measuredvbat *= 2;    // we divided by 2, so multiply back
-  measuredvbat *= 3.3;  // Multiply by 3.3V, our reference voltage
-  measuredvbat /= 1024; // convert to voltage
-  return measuredvbat;
-}
-
 void loop()
 {
   if (runEvery(INTERVAL + random(500)))
@@ -96,7 +88,6 @@ void loop()
     String output;
     serializeJson(doc, output);
     Serial.println(output);
-
     LoRa_sendMessage(output);
   }
 }

@@ -65,7 +65,7 @@ To setup Grafana open the web interface on the RaspberryPi IP address or default
 
 The InfluxDB is added as a datasource, running on `http://localhost:8086` with login `root/root`.
 
-Instead of setting up the Dashboard manually it is possible to baste the included JSON file [`model.json`](/misc/grafana_dashboard.json) into the Dashboard import dialog.
+Instead of setting up the Dashboard manually it is possible to paste the included JSON file [`model.json`](/misc/grafana_dashboard.json) into the Dashboard import dialog.
 
 ## Running `json2influx` 
 
@@ -93,6 +93,6 @@ The output should look similar to the following lines:
 
 ## Result
 
-Below a picture of the setup running with three nodes for about 20 minutes. It show the measured temperature, humidity, battery voltage and RSSI value.
+Below is a picture of the setup running with three nodes for about 20 minutes. It shows the measured temperature, humidity, battery voltage and RSSI value.
 
 ![](/img/grafana.png)
