@@ -1,5 +1,10 @@
+**/.pio/
+*.swp
+.vscode/
 bin/
-lib64
-lib/
-share/
 include/
+lib/
+lib64
+log.txt
+share/
+site/

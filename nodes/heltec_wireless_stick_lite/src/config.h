@@ -1,0 +1,9 @@
+#define VBATPIN 39
+#define PIN_CS 18
+#define PIN_RST 14
+#define PIN_IRQ 26
+#define FREQ 915E6
+#define DHTTYPE DHT22
+#define DHTPIN 4
+#define INTERVAL 10000
+#define NODE_ID "heltec_wsl_1"
