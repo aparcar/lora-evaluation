@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://aparcar.github.io/lora/</loc>
-     <lastmod>2020-04-23</lastmod>
+     <lastmod>2020-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://aparcar.github.io/lora/datasheets/</loc>
-     <lastmod>2020-04-23</lastmod>
+     <lastmod>2020-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://aparcar.github.io/lora/hardware/nodes/adafruit_feather_m0/</loc>
-     <lastmod>2020-04-23</lastmod>
+     <lastmod>2020-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://aparcar.github.io/lora/hardware/nodes/heltec_cubecell_dev/</loc>
-     <lastmod>2020-04-23</lastmod>
+     <lastmod>2020-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://aparcar.github.io/lora/hardware/nodes/heltec_wireless_stick_lite/</loc>
-     <lastmod>2020-04-23</lastmod>
+     <lastmod>2020-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://aparcar.github.io/lora/hardware/nodes/sparkfun_pro_mini/</loc>
-     <lastmod>2020-04-23</lastmod>
+     <lastmod>2020-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://aparcar.github.io/lora/software/combined_backend/</loc>
-     <lastmod>2020-04-23</lastmod>
+     <lastmod>2020-04-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

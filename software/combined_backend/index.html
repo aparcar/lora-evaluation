@@ -321,7 +321,7 @@ sudo apt-get install -y grafana-rpi
 <h2 id="grafana-setup">Grafana setup</h2>
 <p>To setup Grafana open the web interface on the RaspberryPi IP address or default hostname <code>raspberrypi</code>. The web interface runs on port <code>3000</code>. The first login works with the credential combination <code>admin/admin</code> and should be changed as the interface is, unlike the database, available in the network.</p>
 <p>The InfluxDB is added as a datasource, running on <code>http://localhost:8086</code> with login <code>root/root</code>.</p>
-<p>Instead of setting up the Dashboard manually it is possible to baste the included JSON file <a href="/misc/grafana_dashboard.json"><code>model.json</code></a> into the Dashboard import dialog.</p>
+<p>Instead of setting up the Dashboard manually it is possible to paste the included JSON file <a href="/misc/grafana_dashboard.json"><code>model.json</code></a> into the Dashboard import dialog.</p>
 <h2 id="running-json2influx">Running <code>json2influx</code></h2>
 <p>Once all components are installed and setup the Python script <a href="/lora2influx.py"><code>json2influx.py</code></a> that reads JSON messages from Serial and inserts them into the InfluxDB is started as following:</p>
 <div class="codehilite"><pre><span></span><code>nohup python3 lora2influx.py <span class="p">&amp;</span>
@@ -338,7 +338,7 @@ sudo apt-get install -y grafana-rpi
 <span class="m">2020</span>-04-24 <span class="m">04</span>:39:37,921 <span class="o">[</span>DEBUG<span class="o">]</span> http://localhost:8086 <span class="s2">"POST /write?db=uhmdemo HTTP/1.1"</span> <span class="m">204</span> <span class="m">0</span>
 </code></pre></div>
 <h2 id="result">Result</h2>
-<p>Below a picture of the setup running with three nodes for about 20 minutes. It show the measured temperature, humidity, battery voltage and RSSI value.</p>
+<p>Below is a picture of the setup running with three nodes for about 20 minutes. It shows the measured temperature, humidity, battery voltage and RSSI value.</p>
 <p><img alt="" src="/img/grafana.png"/></p>
 </article>
 </div>
