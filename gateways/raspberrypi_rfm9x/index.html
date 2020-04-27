@@ -5,11 +5,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://aparcar.github.io/lora/datasheets/" rel="canonical"/>
-<link href="../assets/images/favicon.png" rel="shortcut icon"/>
+<link href="https://aparcar.github.io/lora/gateways/raspberrypi_rfm9x/" rel="canonical"/>
+<link href="../../assets/images/favicon.png" rel="shortcut icon"/>
 <meta content="mkdocs-1.1, mkdocs-material-5.0.1" name="generator"/>
-<title>Datasheets - LoRa sensor evaluation</title>
-<link href="../assets/stylesheets/main.c3000690.min.css" rel="stylesheet"/>
+<title>RaspberryPi RFM9x InfluxDB gateway - LoRa sensor evaluation</title>
+<link href="../../assets/stylesheets/main.c3000690.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -19,7 +19,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#datasheets">
+<a class="md-skip" href="#raspberrypi-rfm9x-influxdb-gateway">
           Skip to content
         </a>
 </div>
@@ -40,7 +40,7 @@
           </span>
 <span class="md-header-nav__topic md-ellipsis">
             
-              Datasheets
+              RaspberryPi RFM9x InfluxDB gateway
             
           </span>
 </div>
@@ -90,48 +90,17 @@
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href=".." title="Start">
+<a class="md-nav__link" href="../.." title="Start">
       Start
     </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-        Datasheets
-        <span class="md-nav__icon md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z"></path></svg>
-</span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./" title="Datasheets">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../datasheets/" title="Datasheets">
       Datasheets
     </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path></svg>
-</span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#lora">
-    LoRa
-  </a>
-<nav aria-label="LoRa" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sx1276">
-    SX1276
-  </a>
 </li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" id="nav-3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-3" id="nav-3" type="checkbox"/>
 <label class="md-nav__link" for="nav-3">
       Gateways
       <span class="md-nav__icon md-icon">
@@ -146,10 +115,47 @@
         Gateways
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../gateways/raspberrypi_rfm9x/" title="RaspberryPi RFM9x InfluxDB gateway">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        RaspberryPi RFM9x InfluxDB gateway
+        <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z"></path></svg>
+</span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./" title="RaspberryPi RFM9x InfluxDB gateway">
       RaspberryPi RFM9x InfluxDB gateway
     </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path></svg>
+</span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configini">
+    config.ini
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#raspberrypi-setup">
+    RaspberryPi setup
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rfm9x-wiring">
+    RFM9x wiring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#running-the-python-script">
+    Running the Python script
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -187,22 +193,22 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../hardware/nodes/adafruit_feather_m0/" title="Adafruit Feather M0">
+<a class="md-nav__link" href="../../hardware/nodes/adafruit_feather_m0/" title="Adafruit Feather M0">
       Adafruit Feather M0
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../hardware/nodes/heltec_cubecell_dev/" title="Heltec CubeCell Dev-Board">
+<a class="md-nav__link" href="../../hardware/nodes/heltec_cubecell_dev/" title="Heltec CubeCell Dev-Board">
       Heltec CubeCell Dev-Board
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../hardware/nodes/heltec_wireless_stick_lite/" title="Heltec Wireless Stick Lite">
+<a class="md-nav__link" href="../../hardware/nodes/heltec_wireless_stick_lite/" title="Heltec Wireless Stick Lite">
       Heltec Wireless Stick Lite
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../hardware/nodes/sparkfun_pro_mini/" title="Sparkfun Pro Mini">
+<a class="md-nav__link" href="../../hardware/nodes/sparkfun_pro_mini/" title="Sparkfun Pro Mini">
       Sparkfun Pro Mini
     </a>
 </li>
@@ -229,7 +235,7 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../software/combined_backend/" title="Combined backend">
+<a class="md-nav__link" href="../../software/combined_backend/" title="Combined backend">
       Combined backend
     </a>
 </li>
@@ -253,18 +259,24 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#lora">
-    LoRa
-  </a>
-<nav aria-label="LoRa" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sx1276">
-    SX1276
+<a class="md-nav__link" href="#configini">
+    config.ini
   </a>
 </li>
-</ul>
-</nav>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#raspberrypi-setup">
+    RaspberryPi setup
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rfm9x-wiring">
+    RFM9x wiring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#running-the-python-script">
+    Running the Python script
+  </a>
 </li>
 </ul>
 </nav>
@@ -273,21 +285,97 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<h1 id="datasheets">Datasheets</h1>
-<h2 id="lora">LoRa</h2>
-<ul>
-<li><a href="RFM96W-V2.0.pdf">RFM9X</a> - The radio module, which contains the SX1272 chipset</li>
-</ul>
-<h3 id="sx1276">SX1276</h3>
-<ul>
-<li><a href="https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276">Semtech</a></li>
-<li><a href="sx1276_77_78_79.pdf">Datasheet</a></li>
-</ul>
-<p>$## SX1262</p>
-<ul>
-<li><a href="https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262">Semtech</a></li>
-<li><a href="DS_SX1261-2_V1.2.pdf">Datasheet</a></li>
-</ul>
+<h1 id="raspberrypi-rfm9x-influxdb-gateway">RaspberryPi RFM9x InfluxDB gateway</h1>
+<p>This setup describes a RaspberryPi receiving LoRa messages via an attached
+RFM9x antenna. Currently received packages are expected to contain JSON
+strings, however MsgPack and CayenneLPP should be explored as more compact
+alternatives.</p>
+<p>Messages are stored in batches of five and then uploaded to the InfluxDB
+backend. It may run on the RaspberryPi for testing or on an external server.</p>
+<h2 id="configini"><code>config.ini</code></h2>
+<p>The config file should be edited before starting the script. The section
+<code>nodes</code> should be treated as a list of names. This option avoids to store
+corrupted messages with bad wrong nodes names in the InfluxDB database.</p>
+<h2 id="raspberrypi-setup">RaspberryPi setup</h2>
+<p>The RaspberryPi is expected to run Raspbian and have Python3 and <code>pip</code>
+installed. Also a network connection to the backend InfluxDB is required. To
+install all script requirements run the following command:</p>
+<div class="codehilite"><pre><span></span><code>pip install -r requirements.txt
+</code></pre></div>
+<h2 id="rfm9x-wiring">RFM9x wiring</h2>
+<p>The used RFM9x is a sold as <em>SX1276 Lora Module for Arduino</em> and produced by
+<em>blkbox</em>. It is available at <a href="https://www.tindie.com/products/blkbox/sx1276-lora-module-for-arduino/">tindie</a>.</p>
+<p>Below a table of the pins:</p>
+<table>
+<thead>
+<tr>
+<th>RFM9x</th>
+<th>Function</th>
+<th>RPi Pin</th>
+<th>RPi GPIO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PIN1</td>
+<td>GND</td>
+<td>6</td>
+<td>-</td>
+</tr>
+<tr>
+<td>PIN2</td>
+<td>VIN (3.3)</td>
+<td>1</td>
+<td>-</td>
+</tr>
+<tr>
+<td>PIN3</td>
+<td>MISO</td>
+<td>21</td>
+<td>-</td>
+</tr>
+<tr>
+<td>PIN4</td>
+<td>MOSI</td>
+<td>19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>PIN5</td>
+<td>CLK</td>
+<td>23</td>
+<td>-</td>
+</tr>
+<tr>
+<td>PIN6</td>
+<td>nSS</td>
+<td>22</td>
+<td>D25</td>
+</tr>
+<tr>
+<td>PIN7</td>
+<td>nRST</td>
+<td>11</td>
+<td>D17</td>
+</tr>
+<tr>
+<td>PIN14</td>
+<td>GPIO0</td>
+<td>7</td>
+<td>unused</td>
+</tr>
+</tbody>
+</table>
+<h2 id="running-the-python-script">Running the Python script</h2>
+<p>Run the <code>main.py</code> script via <code>nohup</code> or <code>tmux</code> to keep it running on the
+RaspberryPi even after closing down a SSH connection.</p>
+<p>An example output is attached below. It is possible to change the debug level
+to <code>DEBUG</code> to print all received messages</p>
+<div class="codehilite"><pre><span></span><code><span class="m">2020</span>-04-27 <span class="m">07</span>:01:56,651 <span class="o">[</span>ERROR<span class="o">]</span> broken message <span class="s1">'bytearray(b'</span><span class="o">{</span><span class="s2">"node"</span>:<span class="s2">"feather_2"</span>,<span class="s2">"bat"</span>:3.:<span class="se">\x</span>b7<span class="se">\x</span>d7<span class="se">\\\x</span>dc<span class="se">\x</span>7f<span class="se">\x</span>b4<span class="se">\x</span>bc<span class="se">\x</span>a7%<span class="se">\x</span>e9!<span class="se">\x</span>deM<span class="se">\x</span>f5<span class="se">\x</span>d9 <span class="se">\x</span>d6<span class="se">\x</span>f9<span class="s1">')'</span>
+<span class="m">2020</span>-04-27 <span class="m">07</span>:02:16,780 <span class="o">[</span>WARNING<span class="o">]</span> missed <span class="m">3</span> message<span class="o">(</span>s<span class="o">)</span> from feather_1
+<span class="m">2020</span>-04-27 <span class="m">07</span>:02:36,909 <span class="o">[</span>WARNING<span class="o">]</span> missed <span class="m">5</span> message<span class="o">(</span>s<span class="o">)</span> from feather_2
+</code></pre></div>
+<p>The logs show that messages arrive partly broken.</p>
 </article>
 </div>
 </div>
@@ -295,7 +383,7 @@
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav aria-label="Footer" class="md-footer-nav__inner md-grid">
-<a class="md-footer-nav__link md-footer-nav__link--prev" href=".." rel="prev" title="Start">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../../datasheets/" rel="prev" title="Datasheets">
 <div class="md-footer-nav__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path></svg>
 </div>
@@ -304,17 +392,17 @@
 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Start
+                Datasheets
               </div>
 </div>
 </a>
-<a class="md-footer-nav__link md-footer-nav__link--next" href="../gateways/raspberrypi_rfm9x/" rel="next" title="RaspberryPi RFM9x InfluxDB gateway">
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../../hardware/nodes/adafruit_feather_m0/" rel="next" title="Adafruit Feather M0">
 <div class="md-footer-nav__title">
 <div class="md-ellipsis">
 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                RaspberryPi RFM9x InfluxDB gateway
+                Adafruit Feather M0
               </div>
 </div>
 <div class="md-footer-nav__button md-icon">
@@ -336,14 +424,14 @@
 </div>
 </footer>
 </div>
-<script src="../assets/javascripts/vendor.f45d2d8d.min.js"></script>
-<script src="../assets/javascripts/bundle.74d0b805.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../../assets/javascripts/vendor.f45d2d8d.min.js"></script>
+<script src="../../assets/javascripts/bundle.74d0b805.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
-          base: "..",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.7f7c8775.min.js"
+            worker: "../../assets/javascripts/worker/search.7f7c8775.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
