@@ -3,7 +3,7 @@
 .vscode/
 bin/
 include/
-lib/
+lib/python*
 lib64
 log.txt
 share/
